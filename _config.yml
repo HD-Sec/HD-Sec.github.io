@@ -30,7 +30,7 @@ url: "https://hd-sec.github.io" # the base hostname & protocol for your site, e.
 #github_username:  jekyll
 
 # Build settings
-#theme: jekyll-theme-clean-blog
+theme: jekyll-theme-clean-blog
 markdown:           kramdown
 paginate:           5
 paginate_path:      "/posts/page:num/"
