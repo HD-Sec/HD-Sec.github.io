@@ -19,7 +19,8 @@ Engineering Research Chair and leads the University's cyber security activities.
  <li><p> <a href="https://www.ecs.soton.ac.uk/people/tsh2n14">Dr Thai Son Hoang</a> is a leading researcher in refinement-based formal methods, 
  including Event-B. </p></li>
 
- <li><p> <a href="https://www.ecs.soton.ac.uk/people/la1e17">Dr Leonardo Anielloe</a> noted for his research on cyber security and distributed systems topics. </p></li>
+ <li><p> <a href="https://www.ecs.soton.ac.uk/people/la1e17">Dr Leonardo Aniello</a> noted for his research on cyber security and distributed systems topics. </p></li>
 
  <li><p> <a href="https://www.ecs.soton.ac.uk/people/dd4g12"> Dr Dana Dghaym</a> is a researcher in formal methods and has experience in tool development and verification.</p></li>
+ 
 </ul>
