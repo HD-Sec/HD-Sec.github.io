@@ -23,4 +23,6 @@ Engineering Research Chair and leads the University's cyber security activities.
 
  <li><p> <a href="https://www.ecs.soton.ac.uk/people/dd4g12"> Dr Dana Dghaym</a> is a researcher in formal methods and has experience in tool development and verification.</p></li>
  
+ <li><p> Runshan Hu is a cyber security researcher.</p></li>
+ 
 </ul>
