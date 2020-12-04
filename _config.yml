@@ -21,7 +21,7 @@
 title: HD-Sec
 email: hdsec@soton.ac.uk
 description: >- # this means to ignore newlines until "baseurl:"
-  Southampton's HD-Sec solution aims to create formal methods to guide software design 
+  Southampton's HD-Sec is working with the DSbD ecosystem to create formal methods to guide software design 
   which will speed up the process and reduce errors and security vulnrabilities that could
   have been exploited by hackers.
 baseurl: "" # the subpath of your site, e.g. /blog

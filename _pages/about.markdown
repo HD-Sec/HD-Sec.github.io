@@ -7,8 +7,8 @@ background: '/assets/images/cyber_orig.jpg'
 ## About
 Led by Principal Investigator, Professor [Michael Butler](https://www.ecs.soton.ac.uk/people/mbutler), the Holistic Design of Secure 
 Systems on Capability Hardware (HD-Sec) project will receive funding as part of a £10M 
-investment in nine projects by the UK government through its ‘Digital Security by Design’ 
-programme announced by Digital Secretary, Oliver Dowden.
+investment in nine projects by the UK government through its ‘Digital Security by Design’ (DSbD)
+programme to support the DSbD ecosystem.
 The funding is managed by the Engineering and Physical Sciences Research Council (EPSRC).
 
 <p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em; background-color:#E4F5FA">
