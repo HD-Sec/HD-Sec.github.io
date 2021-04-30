@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "HD-Sec News Release"
+title: HD-Sec News Release
 date:   2020-06-11 11:18:23 +0100
 background: '/assets/images/cyber_orig.jpg'
 ---
