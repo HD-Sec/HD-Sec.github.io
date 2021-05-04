@@ -32,7 +32,7 @@ remote_theme: BlackrockDigital/startbootstrap-clean-blog-jekyll
 # Build settings
 theme: jekyll-theme-clean-blog
 markdown:           kramdown
-#paginate:           5
+# paginate:           5
 #paginate_path:      "/posts/page:num/"
 
 plugins:
