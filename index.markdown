@@ -16,4 +16,4 @@ software vulnerabilities, underpinned by additional hardware protection capabili
 capability hardware). Our project will address engineering challenges in **establishing** and **formally verifying** 
 the relationship between **application-level security requirements** and **secure software implementations** 
 running on **capability hardware**. Our proposal is addressing Objective 1: *Capability enabled hardware 
-proof and software verification* of the EPSRC/ISCF Digital Security by Design call.
+proof and software verification* of the EPSRC/ISCF Digital Security by Design call. 
