@@ -21,8 +21,10 @@ Engineering Research Chair and leads the University's cyber security activities.
 
  <li><p> <a href="https://www.ecs.soton.ac.uk/people/la1e17">Dr Leonardo Aniello</a> noted for his research on cyber security and distributed systems topics. </p></li>
 
- <li><p> <a href="https://www.ecs.soton.ac.uk/people/dd4g12"> Dr Dana Dghaym</a> is a researcher in formal methods and has experience in tool development and verification.</p></li>
+ <li><p> <a href="https://www.ecs.soton.ac.uk/people/dd4g12"> Dr Dana Dghaym</a> is a lecturer in formal methods and has experience in tool development and verification.</p></li>
  
- <li><p> <a href="https://www.ecs.soton.ac.uk/people/rht1g16"> Robert Thorburn</a> is a researcher in cyber security, working on privacy, systems design, and the IoT.</p></li>
+ <li><p> <a href="https://www.ecs.soton.ac.uk/people/rht1g16"> Dr Robert Thorburn</a> is a researcher in cyber security, working on privacy, systems design, and the IoT.</p></li>
+
+  <li><p> <a href="https://www.ecs.soton.ac.uk/people/asf1g08"> Dr Asieh Salehi Fathabadi</a> is a researcher in formal methods and has experience in tool development and verification.</p></li>
  
 </ul>
