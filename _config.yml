@@ -28,7 +28,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://hd-sec.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 #github_username:  jekyll
-remote_theme: BlackrockDigital/startbootstrap-clean-blog-jekyll
+#remote_theme: BlackrockDigital/startbootstrap-clean-blog-jekyll
+remote_theme: StartBootstrap/startbootstrap-clean-blog-jekyll
 # Build settings
 theme: jekyll-theme-clean-blog
 markdown:           kramdown
