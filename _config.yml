@@ -29,9 +29,10 @@ url: "https://hd-sec.github.io" # the base hostname & protocol for your site, e.
 #twitter_username: jekyllrb
 #github_username:  jekyll
 #remote_theme: BlackrockDigital/startbootstrap-clean-blog-jekyll
-remote_theme: StartBootstrap/startbootstrap-clean-blog-jekyll
+#remote_theme: StartBootstrap/startbootstrap-clean-blog-jekyll
 # Build settings
-theme: jekyll-theme-clean-blog
+#theme: jekyll-theme-clean-blog
+remote_theme: StartBootstrap/startbootstrap-clean-blog-jekyll
 markdown:           kramdown
 paginate:           5
 paginate_path:      "/posts/page:num/"
