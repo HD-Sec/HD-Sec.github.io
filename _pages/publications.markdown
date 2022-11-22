@@ -6,15 +6,15 @@ background: '/assets/images/cyber_orig.jpg'
 ---
 
 ## Publications
-* Salehi Fathabadi, Asieh, Dghaym, Dana, Hoang, Thai Son, Butler, Michael and Snook, Colin (2022). <b>Generating SPARK from Event-B, Providing
+* Salehi Fathabadi, Asieh, Dghaym, Dana, Hoang, Thai Son, Butler, Michael and Snook, Colin <b>(2022)</b>. <b>Generating SPARK from Event-B, Providing
 Fundamental Safety and Security</b> In DETECT 2022 moDeling, vErification and Testing of dEpendable CriTical systems, In conjunction with 11th International Conference on Model and Data Engineering (In press).
-* Thorburn, Robert, Sassone, Vladimiro, Salehi Fathabadi, Asieh, Aniello, Leonardo, Butler, Michael, Dghaym, Dana and Hoang, Thai Son (2022). "<a href="https://dl.acm.org/doi/abs/10.1145/3550356.3559577"> <b>A Lightweight Approach to the Concurrent Use and Integration of
+* Thorburn, Robert, Sassone, Vladimiro, Salehi Fathabadi, Asieh, Aniello, Leonardo, Butler, Michael, Dghaym, Dana and Hoang, Thai Son <b>(2022)</b>. "<a href="https://dl.acm.org/doi/abs/10.1145/3550356.3559577"> <b>A Lightweight Approach to the Concurrent Use and Integration of
 SysML and Formal Methods in Systems Design.</b></a> In MODELS '22: Proceedings of the ACM/IEEE 25th International Conference on Model Driven Engineering Languages and Systems: Companion Proceedings, Pages 83–84.
-* Hoang, Thai Son, Snook, Colin, Dghaym, Dana, Salehi Fathabadi, Asieh and Butler, Michael (2022). <b>Building an Extensible Textual Framework for the Rodin Platform.</b> In F-IDE 2022: 7th Workshop on Formal Integrated Development Environment, Affiliated to SEFM 2022.
-* Snook, Colin, Butler, Michael, Hoang, Thai Son, Salehi Fathabadi, Asieh and Dghaym, Dana (2022). <b>Developing the UML-B modelling tools."</b> In F-IDE 2022: 7th Workshop on Formal Integrated Development Environment, Affiliated to SEFM 2022.
-* Dghaym, Dana, Hoang, Thai Son, Butler, Michael, Hu, Runshan, Aniello, Leonardo and Sassone, Vladimiro (2021). "<a href="https://eprints.soton.ac.uk/448223/"><b>Verifying System-level Security of a Smart Ballot Box</b></a>". In ABZ 2021 – 8th International Conference on Rigorous State Based Methods: ABZ 2021.Springer Nature Switzerland AG. 16 pp.
-* Hoang, Thai Son, Snook, Colin, Dghaym, Dana, Salehi Fathabadi, Asieh and Butler, Michael (2021). "<a href="https://eprints.soton.ac.uk/448174/"><b>The CamilleX Framework for the Rodin Platform"</b></a>. ABZ 2021- 8th International Conference on Rigorous State Based Methods: ABZ 2021, Virtual. 07 - 11 Jun 2021. 6 pp. 
-* Salehi Fathabadi, Asieh, Snook, Colin, Hoang, Thai Son, Dghaym, Dana and Butler, Michael (2021). "<a href="https://eprints.soton.ac.uk/448194/"><b>Extensible Record Structures in Event-B"</b></a>. ABZ 2021- 8th International Conference on Rigorous State Based Methods: ABZ 2021, Virtual. 07 - 11 Jun 2021. 6 pp.  
+* Hoang, Thai Son, Snook, Colin, Dghaym, Dana, Salehi Fathabadi, Asieh and Butler, Michael <b>(2022)</b>. <b>Building an Extensible Textual Framework for the Rodin Platform.</b> In F-IDE 2022: 7th Workshop on Formal Integrated Development Environment, Affiliated to SEFM 2022.
+* Snook, Colin, Butler, Michael, Hoang, Thai Son, Salehi Fathabadi, Asieh and Dghaym, Dana <b>(2022)</b>. <b>Developing the UML-B modelling tools."</b> In F-IDE 2022: 7th Workshop on Formal Integrated Development Environment, Affiliated to SEFM 2022.
+* Dghaym, Dana, Hoang, Thai Son, Butler, Michael, Hu, Runshan, Aniello, Leonardo and Sassone, Vladimiro <b>(2021)</b>. "<a href="https://eprints.soton.ac.uk/448223/"><b>Verifying System-level Security of a Smart Ballot Box</b></a>". In ABZ 2021 – 8th International Conference on Rigorous State Based Methods: ABZ 2021.Springer Nature Switzerland AG. 16 pp.
+* Hoang, Thai Son, Snook, Colin, Dghaym, Dana, Salehi Fathabadi, Asieh and Butler, Michael <b>(2021)</b>. "<a href="https://eprints.soton.ac.uk/448174/"><b>The CamilleX Framework for the Rodin Platform"</b></a>. ABZ 2021- 8th International Conference on Rigorous State Based Methods: ABZ 2021, Virtual. 07 - 11 Jun 2021. 6 pp. 
+* Salehi Fathabadi, Asieh, Snook, Colin, Hoang, Thai Son, Dghaym, Dana and Butler, Michael <b>(2021)</b>. "<a href="https://eprints.soton.ac.uk/448194/"><b>Extensible Record Structures in Event-B"</b></a>. ABZ 2021- 8th International Conference on Rigorous State Based Methods: ABZ 2021, Virtual. 07 - 11 Jun 2021. 6 pp.  
 
 ## Posters
 * DSbD All Hands Networking Meeting - <a href ="/files/DSbD_Networking_Poster.pdf">Poster</a>
