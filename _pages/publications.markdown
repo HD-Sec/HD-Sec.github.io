@@ -17,9 +17,10 @@ SysML and Formal Methods in Systems Design.</b></a> In MODELS '22: Proceedings o
 * Salehi Fathabadi, Asieh, Snook, Colin, Hoang, Thai Son, Dghaym, Dana and Butler, Michael <b>(2021)</b>. "<a href="https://eprints.soton.ac.uk/448194/"><b>Extensible Record Structures in Event-B"</b></a>. ABZ 2021- 8th International Conference on Rigorous State Based Methods: ABZ 2021, Virtual. 07 - 11 Jun 2021. 6 pp.  
 
 ## Posters
-* DSbD All Hands Networking Meeting - <a href ="/files/DSbD_Networking_Poster.pdf">Poster</a>
-* DSbD All Hands Networking Meeting - April 2022 - <a href ="/files/DSbD_All_Hands_event_April2022.pdf">Poster-Apr2022</a>
-* DSbD All Hands Networking Meeting - October 2022 - <a href ="/files/DSbD_All_Hands_event_Oct2022.pdf">Poster-Oct2022</a>
+* MoDELS: Models in software engineering - October 2022 - Montreal, Canada - <a href ="/files/Models_RIS_Poster.pdf">Poster-Oct2022-MoDELS</a>
+* DSbD All Hands Networking Meeting - October 2022 - <a href ="/files/DSbD_All_Hands_event_Oct2022.pdf">Poster-Oct2022-AHM</a>
+* DSbD All Hands Networking Meeting - April 2022 - <a href ="/files/DSbD_All_Hands_event_April2022.pdf">Poster-Apr2022-AHM</a>
+* DSbD All Hands Networking Meeting - <a href ="/files/DSbD_Networking_Poster.pdf">Poster-AHM</a>
 
 ## Talks
 * <a href ="/files/DETECT22_SPARK_CG.pptx"><b>Generating SPARK from Event-B, Providing Fundamental Safety and Security</b></a> <b>(November 2022)</b> In DETECT 2022 moDeling, vErification and Testing of dEpendable CriTical systems, In conjunction with 11th International Conference on Model and Data Engineering, 21-24 Nov 2022, Cairo, Egypt.
