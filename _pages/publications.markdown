@@ -23,7 +23,7 @@ SysML and Formal Methods in Systems Design.</b></a> In MODELS '22: Proceedings o
 * DSbD All Hands Networking Meeting - <a href ="/files/DSbD_Networking_Poster.pdf">Poster-AHM</a>
 
 ## Talks
-* <a href ="/files/DETECT22_SPARK_CG.pptx"><b>Generating SPARK from Event-B, Providing Fundamental Safety and Security</b></a> <b>(November 2022)</b> In DETECT 2022 moDeling, vErification and Testing of dEpendable CriTical systems, In conjunction with 11th International Conference on Model and Data Engineering, 21-24 Nov 2022, Cairo, Egypt.
+* <a href ="/files/DETECT22_SPARK_CG.pdf"><b>Generating SPARK from Event-B, Providing Fundamental Safety and Security</b></a> <b>(November 2022)</b> In DETECT 2022 moDeling, vErification and Testing of dEpendable CriTical systems, In conjunction with 11th International Conference on Model and Data Engineering, 21-24 Nov 2022, Cairo, Egypt.
 
 ## Downloads
 * <a href ="https://drive.google.com/file/d/19dBebvhQfabv3831DCcIXfVA_iL0MTBp/view?usp=sharing">Requirements Interchange System</a>
