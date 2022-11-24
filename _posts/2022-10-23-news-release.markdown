@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "DETECT 2022 Talk"
+title: "MODELS 2022 Talk"
 date:   2022-10-23 00:00:00 +0100
 background: '/assets/images/cyber_orig.jpg'
 ---
