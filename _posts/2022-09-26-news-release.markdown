@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "DETECT 2022 Talk"
+title: "F-IDE 2022 Talk"
 date:   2022-09-26 00:00:00 +0100
 background: '/assets/images/cyber_orig.jpg'
 ---
