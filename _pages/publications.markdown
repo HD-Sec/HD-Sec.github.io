@@ -6,8 +6,10 @@ background: '/assets/images/cyber_orig.jpg'
 ---
 
 ## Publications
+* Salehi Fathabadi, Asieh, Snook, Colin, Dghaym, Dana, Hoang, Thai Son, Alotaibi, Fahad and Butler, Michael <b>(2023)</b>. <a href="https://link.springer.com/chapter/10.1007/978-3-031-33163-3_17"><b>
+Designing Critical Systems Using Hierarchical STPA and Event-B</b></a> In ABZ 2023:  Rigorous State-Based Methods.
 * Salehi Fathabadi, Asieh, Dghaym, Dana, Hoang, Thai Son, Butler, Michael and Snook, Colin <b>(2022)</b>. <b>Generating SPARK from Event-B, Providing
-Fundamental Safety and Security</b> In DETECT 2022 moDeling, vErification and Testing of dEpendable CriTical systems, In conjunction with 11th International Conference on Model and Data Engineering (In press).
+Fundamental Safety and Security</b> In DETECT 2022 moDeling, vErification and Testing of dEpendable CriTical systems, In conjunction with 11th International Conference on Model and Data Engineering.
 * Thorburn, Robert, Sassone, Vladimiro, Salehi Fathabadi, Asieh, Aniello, Leonardo, Butler, Michael, Dghaym, Dana and Hoang, Thai Son <b>(2022)</b>. "<a href="https://dl.acm.org/doi/abs/10.1145/3550356.3559577"> <b>A Lightweight Approach to the Concurrent Use and Integration of
 SysML and Formal Methods in Systems Design.</b></a> In MODELS '22: Proceedings of the ACM/IEEE 25th International Conference on Model Driven Engineering Languages and Systems: Companion Proceedings, Pages 83–84.
 * Hoang, Thai Son, Snook, Colin, Dghaym, Dana, Salehi Fathabadi, Asieh and Butler, Michael <b>(2022)</b>. <b>Building an Extensible Textual Framework for the Rodin Platform.</b> In F-IDE 2022: 7th Workshop on Formal Integrated Development Environment, Affiliated to SEFM 2022.
