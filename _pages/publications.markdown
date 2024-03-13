@@ -6,6 +6,9 @@ background: '/assets/images/cyber_orig.jpg'
 ---
 
 ## Publications
+* Salehi Fathabadi, Asieh, Snook, Colin, Dghaym, Dana, Hoang, Thai Son, Alotaibi, Fahad and Butler, Michael <b>(2024)</b>. <a href="https://link.springer.com/article/10.1007/s11334-024-00551-8"><b>
+Systematic hierarchical analysis of requirements for critical systems</b></a> In Innovations in Systems and Software Engineering
+A NASA Journal.
 * Salehi Fathabadi, Asieh, Snook, Colin, Dghaym, Dana, Hoang, Thai Son, Alotaibi, Fahad and Butler, Michael <b>(2023)</b>. <a href="https://link.springer.com/chapter/10.1007/978-3-031-33163-3_17"><b>
 Designing Critical Systems Using Hierarchical STPA and Event-B</b></a> In ABZ 2023:  Rigorous State-Based Methods.
 * Salehi Fathabadi, Asieh, Dghaym, Dana, Hoang, Thai Son, Butler, Michael and Snook, Colin <b>(2022)</b>. <a href="https://link.springer.com/chapter/10.1007/978-3-031-23119-3_13"> <b>Generating SPARK from Event-B, Providing Fundamental Safety and Security</b></a> In DETECT 2022 moDeling, vErification and Testing of dEpendable CriTical systems, In conjunction with 11th International Conference on Model and Data Engineering.
