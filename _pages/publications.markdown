@@ -8,6 +8,8 @@ background: '/assets/images/cyber_orig.jpg'
 ## Publications
 * Salehi Fathabadi, Asieh, Snook, Colin, Hoang, Thai Son, Thorburn, Robert, Aniello, Leonardo, Sassone, Vladimiro and Butler, Michael <b>(2024)</b>. <a href="https://link.springer.com/chapter/10.1007/978-3-031-63790-2_22"><b>
 Designing exception handling using Event-B</b></a> In ABZ 2024:  Rigorous State-Based Methods.
+* Said Nur Yagmahan, Mehmet, Rezazadeh, Abdolbaghi and Butler, Michael <b>(2024)</b>. <a href="https://link.springer.com/chapter/10.1007/978-3-031-63790-2_11"><b>
+An Event-B Formal Model for Access Control and Resource Management of Serverless Apps</b></a> In ABZ 2024:  Rigorous State-Based Methods.
 * Salehi Fathabadi, Asieh, Snook, Colin, Dghaym, Dana, Hoang, Thai Son, Alotaibi, Fahad and Butler, Michael <b>(2024)</b>. <a href="https://link.springer.com/article/10.1007/s11334-024-00551-8"><b>
 Systematic hierarchical analysis of requirements for critical systems</b></a> In Innovations in Systems and Software Engineering (A NASA Journal).
 * Salehi Fathabadi, Asieh, Snook, Colin, Dghaym, Dana, Hoang, Thai Son, Alotaibi, Fahad and Butler, Michael <b>(2023)</b>. <a href="https://link.springer.com/chapter/10.1007/978-3-031-33163-3_17"><b>
