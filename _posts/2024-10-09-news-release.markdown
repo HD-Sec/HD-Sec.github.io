@@ -82,5 +82,6 @@ sbb_control.trigger = NULL_TRIGGER;
 
 }
 
-<a href ="/files/stm_SBB_exceptions.png">
+<a href ="/files/stm_SBB_exceptions.png">UML-B state machine</a>
+
 
