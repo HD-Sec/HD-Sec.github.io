@@ -4,7 +4,7 @@ title: "Developing safe exception recovery mechanisms for CHERI capability hardw
 date:   2024-10-09 00:00:00 +0100
 background: '/assets/images/cyber_orig.jpg'
 ---
-<p style="text-align:center;">
+<p style="text-align:justify;">
 Mechanisms for detecting exceptional erroneous behaviour are often generic since they are flag unusual use or activity in the underlying low level machinery. 
 An example is the CHERI memory safe capability based approach which is implemented within general purpose electronic computing devices. 
 In contrast, the  design of a suitable recovery response to the detected exception is usually application, or at least domain, specific.  
@@ -24,7 +24,7 @@ We start by proving that the normal behaviour satisfies the important properties
 We basically wrap each invocation of a state-machine state in a sigsetjmp which acts as a kind of 'try' and if there is an exception (which could be any POSIX signal but we show SIGPROT, SIGSEGV & SIGALRM as examples) it exits to the 'catch'  which forces the  state-machine into a new state (which the handler should have set up to be the designated recovery state for that exception occurring in that source state).</p>
 
 <figure>
-  <img src="/files/stm_SBB_exceptions.png">
+  <img src="/files/stm_SBB_exceptions.png" width="1000">
 </figure>
 
 The exception handling is set up at intialisation using sigactions:
