@@ -1,9 +1,11 @@
 ---
 layout: post
-title: "Developing Transactions and Exception Handling in UML-B: CHERI exception handling as recovery mechanism"
+title: "Developing safe exception recovery mechanisms for CHERI capability hardware using UML-B formal analysis"
 date:   2024-10-09 00:00:00 +0100
 background: '/assets/images/cyber_orig.jpg'
+text-align: justify
 ---
+
 Mechanisms for detecting exceptional erroneous behaviour are often generic since they are flag unusual use or activity in the underlying low level machinery. 
 An example is the CHERI memory safe capability based approach which is implemented within general purpose electronic computing devices. 
 In contrast, the  design of a suitable recovery response to the detected exception is usually application, or at least domain, specific.  
@@ -82,6 +84,8 @@ sbb_control.trigger = NULL_TRIGGER;
 
 }
 
-<a href ="/files/stm_SBB_exceptions.png">UML-B state machine</a>
+<figure>
+  <img src="/files/stm_SBB_exceptions.png">
+</figure>
 
 
