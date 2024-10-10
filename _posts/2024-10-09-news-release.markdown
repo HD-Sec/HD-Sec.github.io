@@ -24,7 +24,7 @@ We start by proving that the normal behaviour satisfies the important properties
 We basically wrap each invocation of a state-machine state in a sigsetjmp which acts as a kind of 'try' and if there is an exception (which could be any POSIX signal but we show SIGPROT, SIGSEGV & SIGALRM as examples) it exits to the 'catch'  which forces the  state-machine into a new state (which the handler should have set up to be the designated recovery state for that exception occurring in that source state).</p>
 
 <figure>
-  <img src="/files/stm_SBB_exceptions.png" width="1000">
+  <img src="/files/stm_SBB_exceptions.png" width="1000" class="center">
 </figure>
 
 The exception handling is set up at intialisation using sigactions:
