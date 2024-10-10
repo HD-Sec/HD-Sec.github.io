@@ -3,9 +3,8 @@ layout: post
 title: "Developing safe exception recovery mechanisms for CHERI capability hardware using UML-B formal analysis"
 date:   2024-10-09 00:00:00 +0100
 background: '/assets/images/cyber_orig.jpg'
-text-align: justify
 ---
-
+<p style="text-align:center;">
 Mechanisms for detecting exceptional erroneous behaviour are often generic since they are flag unusual use or activity in the underlying low level machinery. 
 An example is the CHERI memory safe capability based approach which is implemented within general purpose electronic computing devices. 
 In contrast, the  design of a suitable recovery response to the detected exception is usually application, or at least domain, specific.  
@@ -20,12 +19,18 @@ We have also implemented  the modelled system in order to demonstrate the recove
 The implementation is a demonstrator that also contains a simulation of the environment and the user interfaces. 
 The code is seeded to allow a capability exception to be detected so that the recovery can be demonstrated.
 
-We start by proving that the normal behaviour satisfies the important properties at key states of the system, then identify the transactions where variables are out of step according to those properties, then add exception handling where transactions do not complete and show that the recovery mechanisms return the system to a safe state where the properties hold once again.
+We start by proving that the normal behaviour satisfies the important properties at key states of the system, then identify the transactions where variables are out of step according to those properties, then add exception handling where transactions do not complete and show that the recovery mechanisms return the system to a safe state where the properties hold once again. See below figure.
 
-We basically wrap each invocation of  a state-machine state in a sigsetjmp which acts as a kind of 'try' and  if there is an exception (which could be any POSIX signal but we show SIGPROT, SIGSEGV & SIGALRM as examples) it exits to the 'catch'  which forces the  state-machine into a new state (which the handler should have set up to be the designated recovery state for that exception occurring in that source state).
+We basically wrap each invocation of a state-machine state in a sigsetjmp which acts as a kind of 'try' and if there is an exception (which could be any POSIX signal but we show SIGPROT, SIGSEGV & SIGALRM as examples) it exits to the 'catch'  which forces the  state-machine into a new state (which the handler should have set up to be the designated recovery state for that exception occurring in that source state).</p>
 
-The exception handling is set up at intialisation using sigactions.. e.g.
+<figure>
+  <img src="/files/stm_SBB_exceptions.png">
+</figure>
 
+The exception handling is set up at intialisation using sigactions:
+
+<pre style="background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-x: auto;">
+<code style="font-family: Consolas, 'Courier New', monospace; color: #d63384;">
 struct sigaction SBB_sa;
 
 void SBB_setup_exception_handling(){
@@ -41,10 +46,13 @@ SBB_sa.sa_handler = (void *)SBB_Handler;
    sigaction(SIGPROT, &SBB_sa, &SBB_SIGPROT_oldsa);
    sigaction(SIGSEGV, &SBB_sa, &SBB_SIGSEGV_oldsa);
 }
+</code>
+</pre>
 
-where  SBB_Handler is the exception handler routine..
+where  SBB_Handler is the exception handler routine:
 
-void SBB_Handler(int sigtype, siginfo_t *info, void *context) {
+<pre style="background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-x: auto;">
+<code style="font-family: Consolas, 'Courier New', monospace; color: #d63384;">
 printf("\n>>SBB Handler - sigtype: %d while in state ", sigtype);
 printCurrentState();
 record_exception(info);
@@ -83,9 +91,6 @@ sbb_control.trigger = NULL_TRIGGER;
 }
 
 }
-
-<figure>
-  <img src="/files/stm_SBB_exceptions.png">
-</figure>
-
+ </code>
+</pre>
 
