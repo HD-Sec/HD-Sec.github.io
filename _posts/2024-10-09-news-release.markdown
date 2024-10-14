@@ -5,24 +5,22 @@ date:   2024-10-09 00:00:00 +0100
 background: '/assets/images/cyber_orig.jpg'
 ---
 <p style="text-align:justify;">
-Mechanisms for detecting exceptional erroneous behaviour are often generic since they are flag unusual use or activity in the underlying low level machinery. 
-An example is the CHERI memory safe capability based approach which is implemented within general purpose electronic computing devices. 
+Mechanisms for detecting exceptional erroneous behaviour are often generic since they flag unusual use or activity in the underlying low level machinery. 
+An example is the CHERI (Capability Hardware Enhanced RISC Instructions) memory safe capability based approach which is implemented within general purpose electronic computing devices. 
 In contrast, the  design of a suitable recovery response to the detected exception is usually application, or at least domain, specific.  
 In some cases a  safe response might be to halt, but this could play into the hands of a malicious attacker by providing an easy vector to achieve denial of service attacks. 
 In many cases it is not safe for a critical service to halt.
-Therefore we believe that generic detection mechanisms like CHERI are only useful of they are complimented by tools and techniques for application  engineers to design and implement safe recovery strategies that allow the system to continue its service as much as possible.
+Therefore we believe that generic detection mechanisms like CHERI are only useful if they are complimented by tools and techniques for application  engineers to design and implement safe recovery strategies that allow the system to continue its service as much as possible.
 
  
 We already use formal modelling tools to support the rigorous analysis of systems ensuring that they meet important (e.g. safety and security) properties.
-In HDSEC we have adapted these formal analysis tools to show how they can be used to design and analyse exception recovery responses and verify that they recover the system to a condition that satisfies the important system properties.
+In HD-Sec we have adapted these formal analysis tools to show how they can be used to design and analyse exception recovery responses and verify that they recover the system to a condition that satisfies the important system properties.
 
- 
+We start by proving that the normal behaviour satisfies the important properties at key states of the system, then identify the transactions where variables are out of step according to those properties, then add exception handling where transactions do not complete and show that the recovery mechanisms return the system to a safe state where the properties hold once again. See the figure below, which shows the UML-B model of an electronic voting system with memory capability and timeout exceptions.
+
 We have also implemented  the modelled system in order to demonstrate the recovery responses  in a real system running on a CHERI Morello PC. 
 The implementation is a demonstrator that also contains a simulation of the environment and the user interfaces. 
 The code is seeded to allow a capability exception to be detected so that the recovery can be demonstrated.
-
-
-We start by proving that the normal behaviour satisfies the important properties at key states of the system, then identify the transactions where variables are out of step according to those properties, then add exception handling where transactions do not complete and show that the recovery mechanisms return the system to a safe state where the properties hold once again. See below figure.
 
 
 We basically wrap each invocation of a state-machine state in a sigsetjmp which acts as a kind of 'try' and if there is an exception (which could be any POSIX signal but we show SIGPROT, SIGSEGV & SIGALRM as examples) it exits to the 'catch'  which forces the  state-machine into a new state (which the handler should have set up to be the designated recovery state for that exception occurring in that source state).</p>
