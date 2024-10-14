@@ -4,7 +4,7 @@ title: "Developing safe exception recovery mechanisms for CHERI capability hardw
 date:   2024-10-09 00:00:00 +0100
 background: '/assets/images/cyber_orig.jpg'
 ---
-<p style="text-align:justify;">
+
 Mechanisms for detecting exceptional erroneous behaviour are often generic since they flag unusual use or activity in the underlying low level machinery. 
 An example is the CHERI (Capability Hardware Enhanced RISC Instructions) memory safe capability based approach which is implemented within general purpose electronic computing devices. 
 In contrast, the  design of a suitable recovery response to the detected exception is usually application, or at least domain, specific.  
@@ -23,7 +23,7 @@ The implementation is a demonstrator that also contains a simulation of the envi
 The code is seeded to allow a capability exception to be detected so that the recovery can be demonstrated.
 
 
-We basically wrap each invocation of a state-machine state in a sigsetjmp which acts as a kind of 'try' and if there is an exception (which could be any POSIX signal but we show SIGPROT, SIGSEGV & SIGALRM as examples) it exits to the 'catch'  which forces the  state-machine into a new state (which the handler should have set up to be the designated recovery state for that exception occurring in that source state).</p>
+We basically wrap each invocation of a state-machine state in a sigsetjmp which acts as a kind of 'try' and if there is an exception (which could be any POSIX signal but we show SIGPROT, SIGSEGV & SIGALRM as examples) it exits to the 'catch'  which forces the  state-machine into a new state (which the handler should have set up to be the designated recovery state for that exception occurring in that source state).
 
 
 <figure>
@@ -44,10 +44,10 @@ sigaddset(&SBB_sa.sa_mask, SIGALRM);
 sigaddset(&SBB_sa.sa_mask, SIGSEGV);
 //assign the exception handler routine
 SBB_sa.sa_handler = (void *)SBB_Handler;
-   //assign handler to SIGALRM and SIGPROT and SIGSEGV
-   sigaction(SIGALRM, &SBB_sa, &SBB_SIGALRM_oldsa);
-   sigaction(SIGPROT, &SBB_sa, &SBB_SIGPROT_oldsa);
-   sigaction(SIGSEGV, &SBB_sa, &SBB_SIGSEGV_oldsa);
+    //assign handler to SIGALRM and SIGPROT and SIGSEGV
+    sigaction(SIGALRM, &SBB_sa, &SBB_SIGALRM_oldsa);
+    sigaction(SIGPROT, &SBB_sa, &SBB_SIGPROT_oldsa);
+    sigaction(SIGSEGV, &SBB_sa, &SBB_SIGSEGV_oldsa);
 }
 </code>
 </pre>
@@ -60,35 +60,35 @@ printf("\n>>SBB Handler - sigtype: %d while in state ", sigtype);
 printCurrentState();
 record_exception(info);
 switch (sigtype) {
- case SIGPROT: //capability  violation
+  case SIGPROT: //capability  violation
                //code to  decide on the best recovery and set the next statemachine state accordingly
-  ... sbb_control.state = ??
-  case SIGSEGV: //segmentation violation
+   ... sbb_control.state = ??
+   case SIGSEGV: //segmentation violation
       ....
 }
 siglongjmp(SBB_abort_step, 1);
 }
 
 void SBB_statemachine(){
- bool  changedState=false;
- while (true){
-  if (sigsetjmp(SBB_abort_step,true) ==0) {   // TRY
-   if (sbb_control.state==SBB_Null){
-    printf("Something went wrong! SBB_state is Null\n");
-   } else{
-    alarm(getAlarm()); //set the timeout for the current state
-    changedState = false;
-    printCurrentState();
-    do {
-     ROLLER_step(); //progress the roller simulation
-     changedState = SBB_checkState(); //see if we can change the state
-    } while (!changedState); //repeat until a state change occurs
-   }
+  bool  changedState=false;
+  while (true){
+    if (sigsetjmp(SBB_abort_step,true) ==0) {   // TRY
+      if (sbb_control.state==SBB_Null){
+        printf("Something went wrong! SBB_state is Null\n");
+      } else{
+        alarm(getAlarm()); //set the timeout for the current state
+        changedState = false;
+        printCurrentState();
+        do {
+          ROLLER_step(); //progress the roller simulation
+          changedState = SBB_checkState(); //see if we can change the state
+        } while (!changedState); //repeat until a state change occurs
+      }
 
-  } //SBB_abort_step - exit point for handled exceptions
+   } //SBB_abort_step - exit point for handled exceptions
  
-  sbb_control.trigger = NULL_TRIGGER;
- }
+   sbb_control.trigger = NULL_TRIGGER;
+  }
 }
 
 </code>
