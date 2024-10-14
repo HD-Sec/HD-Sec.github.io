@@ -60,40 +60,37 @@ printf("\n>>SBB Handler - sigtype: %d while in state ", sigtype);
 printCurrentState();
 record_exception(info);
 switch (sigtype) {
-
-case SIGPROT: //capability  violation
-                  ///code to  decide on the best recovery and set the next statemachine state accordingly
-               ... sbb_control.state = ??
-      case SIGSEGV: //segmentation violation
+ case SIGPROT: //capability  violation
+               //code to  decide on the best recovery and set the next statemachine state accordingly
+  ... sbb_control.state = ??
+  case SIGSEGV: //segmentation violation
       ....
-    }
- siglongjmp(SBB_abort_step, 1);
+}
+siglongjmp(SBB_abort_step, 1);
 }
 
 void SBB_statemachine(){
-bool  changedState=false;
-while (true){
+ bool  changedState=false;
+ while (true){
+  if (sigsetjmp(SBB_abort_step,true) ==0) {   // TRY
+   if (sbb_control.state==SBB_Null){
+    printf("Something went wrong! SBB_state is Null\n");
+   } else{
+    alarm(getAlarm()); //set the timeout for the current state
+    changedState = false;
+    printCurrentState();
+    do {
+     ROLLER_step(); //progress the roller simulation
+     changedState = SBB_checkState(); //see if we can change the state
+    } while (!changedState); //repeat until a state change occurs
+   }
 
-if (sigsetjmp(SBB_abort_step,true) ==0) {   // TRY
-
-if (sbb_control.state==SBB_Null){
-printf("Something went wrong! SBB_state is Null\n");
-}else{
-alarm(getAlarm()); //set the timeout for the current state
-changedState = false;
-printCurrentState();
-do {
-ROLLER_step(); //progress the roller simulation
-changedState = SBB_checkState(); //see if we can change the state
-} while (!changedState); //repeat until a state change occurs
+  } //SBB_abort_step - exit point for handled exceptions
+ 
+  sbb_control.trigger = NULL_TRIGGER;
+ }
 }
 
-} //SBB_abort_step - exit point for handled exceptions
-
-sbb_control.trigger = NULL_TRIGGER;
-}
-
-}
- </code>
+</code>
 </pre>
 
