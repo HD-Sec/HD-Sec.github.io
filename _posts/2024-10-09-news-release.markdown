@@ -18,17 +18,16 @@ In HD-Sec we have adapted these formal analysis tools to show how they can be us
 
 We start by proving that the normal behaviour satisfies the important properties at key states of the system, then identify the transactions where variables are out of step according to those properties, then add exception handling where transactions do not complete and show that the recovery mechanisms return the system to a safe state where the properties hold once again. See the figure below, which shows the UML-B model of an electronic voting system with memory capability and timeout exceptions.
 
+<figure>
+  <img src="/files/stm_SBB_exceptions.png" width="1000" class="center">
+</figure>
+
 We have also implemented  the modelled system in order to demonstrate the recovery responses  in a real system running on a CHERI Morello PC. 
 The implementation is a demonstrator that also contains a simulation of the environment and the user interfaces. 
 The code is seeded to allow a capability exception to be detected so that the recovery can be demonstrated.
 
 
 We basically wrap each invocation of a state-machine state in a sigsetjmp which acts as a kind of 'try' and if there is an exception (which could be any POSIX signal but we show SIGPROT, SIGSEGV & SIGALRM as examples) it exits to the 'catch'  which forces the  state-machine into a new state (which the handler should have set up to be the designated recovery state for that exception occurring in that source state).
-
-
-<figure>
-  <img src="/files/stm_SBB_exceptions.png" width="1000" class="center">
-</figure>
 
 The exception handling is set up at intialisation using sigactions:
 
