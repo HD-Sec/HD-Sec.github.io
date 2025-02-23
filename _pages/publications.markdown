@@ -24,6 +24,7 @@ SysML and Formal Methods in Systems Design.</b></a> In MODELS '22: Proceedings o
 * Salehi Fathabadi, Asieh, Snook, Colin, Hoang, Thai Son, Dghaym, Dana and Butler, Michael <b>(2021)</b>. "<a href="https://eprints.soton.ac.uk/448194/"><b>Extensible Record Structures in Event-B"</b></a>. ABZ 2021- 8th International Conference on Rigorous State Based Methods: ABZ 2021, Virtual. 07 - 11 Jun 2021. 6 pp.  
 
 ## Posters
+* DSbD ShowCase event - February 2025 - <a href ="/files/DSbD_Showcase_event_Jan2025.pdf">Poster-Feb2025-ShowCase</a>
 * DSbD All Hands Networking Meeting - September 2024 - <a href ="/files/DSbD_All_Hands_event_Sep2024.pdf">Poster-Sep2024-AHM</a>
 * MoDELS: Models in software engineering - October 2022 - Montreal, Canada - <a href ="/files/Models_RIS_Poster.pdf">Poster-Oct2022-MoDELS</a>
 * DSbD All Hands Networking Meeting - October 2022 - <a href ="/files/DSbD_All_Hands_event_Oct2022.pdf">Poster-Oct2022-AHM</a>
