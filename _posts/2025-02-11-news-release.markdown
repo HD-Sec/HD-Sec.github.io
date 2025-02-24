@@ -65,11 +65,7 @@ The CHERIoT framework plays a critical role in supporting structured and compart
 
 Through CHERIoT integration, the SBB enhances its ability to detect, contain, and recover from faults efficiently while maintaining a secure and tamper-resistant voting process.
 
-Below is a video of the demo:
-
-<video>
-  <source src="/files/SBBDEMO.mp4">
-</video>
+A video of the demo ia available here: <a href="https://www.example.com](https://drive.google.com/file/d/1Tr70X54T5wuJ4GmVOpJB6jdwjdOgIf59/view?usp=drive_link">SBB Demo</a>.
 
 <b> Conclusion </b>
 
