@@ -28,7 +28,7 @@ The SBB system employs a compartmentalized architecture to bolster both security
 *	User interaction compartments: Sonata LCD and Joystick.
 
 <figure>
-  <img src="/files/compartments.png" width="1000" class="center">
+  <img src="/files/compartments.png" width="700" class="center">
 </figure>
  
 Each compartment operates independently, communicating securely through controlled function calls. This design ensures:
@@ -48,11 +48,11 @@ The SBB integrates state encoding to refine its error-handling approach. By adop
 For instance, in the event of an exception within a compartment, the state machine isolates the fault source and triggers the optimal recovery path, minimizing operational disruptions.
 
 <figure>
-  <img src="/files/stateMachine1.png" width="1000" class="center">
+  <img src="/files/stateMachine1.png" width="800" class="center">
 </figure>
 
 <figure>
-  <img src="/files/stateMachine2.png" width="1000" class="center">
+  <img src="/files/stateMachine2.png" width="900" class="center">
 </figure>
 
 <b> CHERIoT Infrastructure: Strengthening Security and Recovery </b>
@@ -64,6 +64,12 @@ The CHERIoT framework plays a critical role in supporting structured and compart
 *	Secure execution environments, leveraging CHERIoT's memory safety mechanisms to mitigate security risks.
 
 Through CHERIoT integration, the SBB enhances its ability to detect, contain, and recover from faults efficiently while maintaining a secure and tamper-resistant voting process.
+
+Below is a video of the demo:
+
+<video>
+  <source src="/files/SBBDEMO.mp4">
+</video>
 
 <b> Conclusion </b>
 
